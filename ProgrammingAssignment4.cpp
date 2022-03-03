@@ -5,11 +5,11 @@ using namespace std;
 int main()
 {
     int option;
-    double p = 0.0;
-    const double GOLD = 0.01;
-    const double SILVER = 0.02;
-    const double BRONZE = 0.04;
-    double BASEFEE = 1200.0;
+    double p = 0.00;
+    double GOLD = 0.01;
+    double SILVER = 0.02;
+    double BRONZE = 0.04;
+    double BASEFEE = 1200.01;
 
     cout << "Rhoda's Strikeforce Gym\n";
 
@@ -29,7 +29,8 @@ int main()
         cout << "bye bitch";
         exit(0);
     }
-    for (double i = 1.0; i <= 10.0; i += 1.0) {
-        cout << "Year " << i << "    " << p * (i - 1.0) * BASEFEE + BASEFEE << endl;
+
+    for (double i = 1.00; i <= 10.00; i += 1.00) {
+        cout << "Year " << i << "    " << fixed << setprecision(2) << p * (i - 1.00) * 1200.00 + 1200.00 << endl;
     }
 }
